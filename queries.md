@@ -32,8 +32,10 @@ Limit: 10
 
 ### 6. All the companies that don't include the `partners` field.
 
-Query: { partners: { $size: 0 } } 
-ironhack solution: Filter: {partners: {$exists: false}}
+<!-- what eric and josh told us to do  -->
+Filter: { partners: { $size: 0 } } 
+<!-- ironhack solution -->
+Filter: {partners: {$exists: false}}
 
 ### 7. All the companies that have a null type of value on the `category_code` field.
 
